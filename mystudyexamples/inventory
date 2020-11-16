@@ -1,0 +1,11 @@
+[webservers]
+ip-172-31-11-191.us-west-2.compute.internal
+
+[dbserver]
+ip-172-31-11-166.us-west-2.compute.internal
+
+[Ubuntu]
+ip-172-31-11-166.us-west-2.compute.internal
+
+[RedHat]
+ip-172-31-11-191.us-west-2.compute.internal
