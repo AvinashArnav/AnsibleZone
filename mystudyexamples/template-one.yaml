@@ -6,7 +6,7 @@
     template:
       src: firsttemplate.j2
       dest: /home/ansible/templates
- - name: template2 with dynamic machine name
+  - name: template2 with dynamic machine name
     template:
       src: secondtemplate.j2
       dest: /home/ansible/templates1
