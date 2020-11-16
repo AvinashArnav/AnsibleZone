@@ -2,8 +2,7 @@
 - hosts: all
   become: yes
   tasks:
-  - name: template with dynamic machine name
-    tempate:
-      src: firsttemplate.j2
-      dest: /home/ansible/templates
-      
+    - name: template with dynamic machine name
+      tempate:
+        src: firsttemplate.j2
+        dest: /home/ansible/templates
