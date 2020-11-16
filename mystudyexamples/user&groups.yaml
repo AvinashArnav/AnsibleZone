@@ -1,0 +1,18 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: install tomcat
+      yum:
+        name: tomcat
+        state: preent
+      tags:
+        - install
+    - name: create tomcat user
+      user:
+        name: tomcat
+        state: present
+    - name: create tomcat group
+      group:
+        name: tomcat
+        state: present
