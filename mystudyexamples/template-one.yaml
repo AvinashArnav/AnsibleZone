@@ -10,3 +10,15 @@
     template:
       src: secondtemplate.j2
       dest: /home/ansible/templates1
+  - name: tomcat7 default settings
+    template:
+      src: tomcat7.j2
+      dest: /etc/default/tomcat7
+    notify:
+    - restart tomcat
+    handlers:
+    - name: restart tomcat
+      service:
+        name: tomcat7
+        state: restarted
+

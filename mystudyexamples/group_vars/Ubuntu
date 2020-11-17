@@ -1,2 +1,4 @@
 ---
 Username: ansible1
+maxpermsize: 256
+heapsize: 512
