@@ -14,11 +14,11 @@
     template:
       src: tomcat7.j2
       dest: /etc/default/tomcat7
-    notify:
-    - restart tomcat
-    handlers:
-    - name: restart tomcat
-      service:
-        name: tomcat7
-        state: restarted
+  notify:
+  - restart tomcat
+  handlers:
+  - name: restart tomcat
+    service:
+      name: tomcat7
+      state: restarted
 
