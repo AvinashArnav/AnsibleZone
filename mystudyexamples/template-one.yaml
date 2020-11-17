@@ -1,5 +1,5 @@
 ---
-- hosts: Ubuntu
+- hosts: all
   become: yes
   tasks:
   - name: template1 with dynamic machine name
